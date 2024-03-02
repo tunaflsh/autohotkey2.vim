@@ -221,7 +221,7 @@ syn keyword autohotkeyBoolean
 
 syn match   autohotkeyHotkey
       \ contains=autohotkeyKey,
-      \   autohotkeyHotkeyDelimiter
+      \   autohotkeyDelimiter
       \ display
       \ '^\s*\S*\%( Up\)\?::'
 
