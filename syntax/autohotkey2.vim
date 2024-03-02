@@ -142,7 +142,7 @@ syn keyword autohotkeyStatement
       \ Suspend Reload new class extends
 
 syn keyword autohotkeyRepeat
-      \ Loop
+      \ Loop For While Until
 
 syn keyword autohotkeyConditional
       \ Break Case Catch Continue Default Else Finally Goto If Return Switch
