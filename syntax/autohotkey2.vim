@@ -219,6 +219,23 @@ syn keyword autohotkeyBoolean
       \ true
       \ false
 
+syn match   autohotkeyLabel
+      \ contains=autohotkeyLabelName,
+      \   autohotkeyLabelDelimiter,
+      \   autohotkeyComment
+      \ display
+      \ '^\s*\i\+:\s*\%(;.*\)\?$'
+
+syn match   autohotkeyLabelName
+      \ contained
+      \ display
+      \ '^\i\+'
+
+syn match   autohotkeyLabelDelimiter
+      \ contained
+      \ display
+      \ ':'
+
 syn match   autohotkeyHotkey
       \ contains=autohotkeyKey,
       \   autohotkeyDelimiter
@@ -292,6 +309,8 @@ exec "syn sync ccomment autohotkeyComment minlines=" . b:autohotkey_syntax_sync_
 hi def link autohotkeyTodo                Todo
 hi def link autohotkeyComment             Comment
 hi def link autohotkeyCommentStart        autohotkeyComment
+hi def link autohotkeyLabelName           PreProc
+hi def link autohotkeyLabelDelimiter      Delimiter
 hi def link autohotkeyEscape              Special
 hi def link autohotkeyHotkey              Type
 hi def link autohotkeyKey                 Type
