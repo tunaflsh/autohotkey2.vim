@@ -74,55 +74,68 @@ syn match   autohotkeyBuiltinVariable
       \ display
       \ '%\d\+%'
 
-syn keyword autohotkeyCommand
-      \ ClipWait EnvGet EnvSet EnvUpdate
-      \ Drive DriveGet DriveSpaceFree FileAppend FileCopy FileCopyDir
-      \ FileCreateDir FileCreateShortcut FileDelete FileGetAttrib FileEncoding
-      \ FileGetShortcut FileGetSize FileGetTime FileGetVersion FileInstall
-      \ FileMove FileMoveDir FileReadLine FileRead FileRecycle FileRecycleEmpty
-      \ FileRemoveDir FileSelectFolder FileSelectFile FileSetAttrib FileSetTime
-      \ IniDelete IniRead IniWrite SetWorkingDir
-      \ SplitPath
-      \ Gui GuiControl GuiControlGet IfMsgBox InputBox MsgBox Progress
-      \ SplashImage SplashTextOn SplashTextOff ToolTip TrayTip
-      \ Hotkey ListHotkeys BlockInput ControlSend ControlSendRaw GetKeyState
-      \ KeyHistory KeyWait Input Send SendRaw SendInput SendPlay SendEvent
-      \ SendMode SetKeyDelay SetNumScrollCapsLockState SetStoreCapslockMode
-      \ EnvAdd EnvDiv EnvMult EnvSub Random SetFormat Transform
-      \ AutoTrim BlockInput CoordMode Critical Edit ImageSearch
-      \ ListLines ListVars Menu OutputDebug PixelGetColor PixelSearch
-      \ SetBatchLines SetEnv SetTimer SysGet Thread Transform URLDownloadToFile
-      \ Click ControlClick MouseClick MouseClickDrag MouseGetPos MouseMove
-      \ SetDefaultMouseSpeed SetMouseDelay
-      \ Process Run RunWait RunAs Shutdown Sleep
-      \ RegDelete RegRead RegWrite
-      \ SoundBeep SoundGet SoundGetWaveVolume SoundPlay SoundSet
-      \ SoundSetWaveVolume
-      \ FormatTime IfInString IfNotInString Sort StringCaseSense StringGetPos
-      \ StringLeft StringRight StringLower StringUpper StringMid StringReplace
-      \ StringSplit StringTrimLeft StringTrimRight StringLen
-      \ StrSplit StrReplace Throw
-      \ Control ControlClick ControlFocus ControlGet ControlGetFocus
-      \ ControlGetPos ControlGetText ControlMove ControlSend ControlSendRaw
-      \ ControlSetText Menu PostMessage SendMessage SetControlDelay
-      \ WinMenuSelectItem GroupActivate GroupAdd GroupClose GroupDeactivate
-      \ DetectHiddenText DetectHiddenWindows SetTitleMatchMode SetWinDelay
-      \ StatusBarGetText StatusBarWait WinActivate WinActivateBottom WinClose
-      \ WinGet WinGetActiveStats WinGetActiveTitle WinGetClass WinGetPos
-      \ WinGetText WinGetTitle WinHide WinKill WinMaximize WinMinimize
-      \ WinMinimizeAll WinMinimizeAllUndo WinMove WinRestore WinSet
-      \ WinSetTitle WinShow WinWait WinWaitActive WinWaitNotActive WinWaitClose
-      \ SetCapsLockState SetNumLockState SetScrollLockState
-
 syn keyword autohotkeyFunction
-      \ InStr RegExMatch RegExReplace StrLen SubStr Asc Chr Func
-      \ DllCall VarSetCapacity WinActive WinExist IsLabel OnMessage 
-      \ Abs Ceil Exp Floor Log Ln Mod Round Sqrt Sin Cos Tan ASin ACos ATan
-      \ FileExist GetKeyState NumGet NumPut StrGet StrPut RegisterCallback
-      \ IsFunc Trim LTrim RTrim IsObject Object Array FileOpen
-      \ ComObjActive ComObjArray ComObjConnect ComObjCreate ComObjGet
-      \ ComObjError ComObjFlags ComObjQuery ComObjType ComObjValue ComObject
-      \ Format Exception
+      \ ACos ASin ATan Abs BlockInput CallbackCreate CallbackFree CaretGetPos
+      \ Ceil Chr Click ClipWait ComCall ComObjActive ComObjConnect ComObjFlags
+      \ ComObjFromPtr ComObjGet ComObjQuery ComObjType ComObjValue
+      \ ControlAddItem ControlChooseIndex ControlChooseString ControlClick
+      \ ControlDeleteItem ControlFindItem ControlFocus ControlGetChecked
+      \ ControlGetChoice ControlGetClassNN ControlGetEnabled ControlGetExStyle
+      \ ControlGetFocus ControlGetHwnd ControlGetIndex ControlGetItems
+      \ ControlGetPos ControlGetStyle ControlGetText ControlGetVisible
+      \ ControlHide ControlHideDropDown ControlMove ControlSend ControlSendText
+      \ ControlSetChecked ControlSetEnabled ControlSetExStyle ControlSetStyle
+      \ ControlSetText ControlShow ControlShowDropDown CoordMode Cos Critical
+      \ DateAdd DateDiff DetectHiddenText DetectHiddenWindows DirCopy DirCreate
+      \ DirDelete DirExist DirMove DirSelect DllCall Download DriveEject
+      \ DriveGetCapacity DriveGetFileSystem DriveGetLabel DriveGetList
+      \ DriveGetSerial DriveGetSpaceFree DriveGetStatus DriveGetStatusCD
+      \ DriveGetType DriveLock DriveRetract DriveSetLabel DriveUnlock Edit
+      \ EditGetCurrentCol EditGetCurrentLine EditGetLine EditGetLineCount
+      \ EditGetSelectedText EditPaste EnvGet EnvSet Exit ExitApp Exp FileAppend
+      \ FileCopy FileCreateShortcut FileDelete FileEncoding FileExist
+      \ FileGetAttrib FileGetShortcut FileGetSize FileGetTime FileGetVersion
+      \ FileInstall FileMove FileOpen FileRead FileRecycle FileRecycleEmpty
+      \ FileSelect FileSetAttrib FileSetTime Floor Format FormatTime GetKeyName
+      \ GetKeySC GetKeyState GetKeyVK GetMethod GroupActivate GroupAdd
+      \ GroupClose GroupDeactivate GuiCtrlFromHwnd GuiFromHwnd HasBase HasMethod
+      \ HasProp HotIf HotIfWinActive HotIfWinExist HotIfWinNotActive
+      \ HotIfWinNotExist Hotkey Hotstring IL_Add IL_Create IL_Destroy
+      \ ImageSearch InStr IniDelete IniRead IniWrite InputBox InstallKeybdHook
+      \ InstallMouseHook IsAlnum IsAlpha IsDigit IsFloat IsInteger IsLabel
+      \ IsLower IsNumber IsObject IsSet IsSetRef IsSpace IsTime IsUpper IsXDigit
+      \ KeyHistory KeyWait LTrim ListHotkeys ListLines ListVars
+      \ ListViewGetContent Ln LoadPicture Log Max MenuFromHandle MenuSelect Min
+      \ Mod MonitorGet MonitorGetCount MonitorGetName MonitorGetPrimary
+      \ MonitorGetWorkArea MouseClick MouseClickDrag MouseGetPos MouseMove
+      \ MsgBox NumGet NumPut ObjAddRef ObjBindMethod ObjFromPtr ObjFromPtrAddRef
+      \ ObjGetBase ObjGetCapacity ObjHasOwnProp ObjOwnPropCount ObjOwnProps
+      \ ObjPtr ObjPtrAddRef ObjRelease ObjSetBase ObjSetCapacity
+      \ OnClipboardChange OnError OnExit OnMessage Ord OutputDebug Pause
+      \ Persistent PixelGetColor PixelSearch PostMessage ProcessClose
+      \ ProcessExist ProcessGetName ProcessGetParent ProcessGetPath
+      \ ProcessSetPriority ProcessWait ProcessWaitClose RTrim Random
+      \ RegCreateKey RegDelete RegDeleteKey RegExMatch RegExReplace RegRead
+      \ RegWrite Reload Round Run RunAs RunWait Send SendEvent SendInput
+      \ SendLevel SendMessage SendMode SendPlay SendText SetCapsLockState
+      \ SetControlDelay SetDefaultMouseSpeed SetKeyDelay SetMouseDelay
+      \ SetNumLockState SetRegView SetScrollLockState SetStoreCapsLockMode
+      \ SetTimer SetTitleMatchMode SetWinDelay SetWorkingDir Shutdown Sin Sleep
+      \ Sort SoundBeep SoundGetInterface SoundGetMute SoundGetName
+      \ SoundGetVolume SoundPlay SoundSetMute SoundSetVolume SplitPath Sqrt
+      \ StatusBarGetText StatusBarWait StrCompare StrGet StrLen StrLower StrPtr
+      \ StrPut StrReplace StrSplit StrTitle StrUpper SubStr Suspend SysGet
+      \ SysGetIPAddresses Tan Thread ToolTip TraySetIcon TrayTip Trim Type
+      \ VarSetStrCapacity VerCompare WinActivate WinActivateBottom WinActive
+      \ WinClose WinExist WinGetClass WinGetClientPos WinGetControls
+      \ WinGetControlsHwnd WinGetCount WinGetExStyle WinGetID WinGetIDLast
+      \ WinGetList WinGetMinMax WinGetPID WinGetPos WinGetProcessName
+      \ WinGetProcessPath WinGetStyle WinGetText WinGetTitle WinGetTransColor
+      \ WinGetTransparent WinHide WinKill WinMaximize WinMinimize WinMinimizeAll
+      \ WinMinimizeAllUndo WinMove WinMoveBottom WinMoveTop WinRedraw WinRestore
+      \ WinSetAlwaysOnTop WinSetEnabled WinSetExStyle WinSetRegion WinSetStyle
+      \ WinSetTitle WinSetTransColor WinSetTransparent WinShow WinWait
+      \ WinWaitActive WinWaitClose WinWaitNotActive
 
 syn keyword autohotkeyStatement
       \ Break Continue Exit ExitApp Gosub Goto OnExit Pause Return
