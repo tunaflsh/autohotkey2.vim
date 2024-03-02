@@ -231,7 +231,7 @@ syn match   autohotkeyLabel
 syn match   autohotkeyLabelName
       \ contained
       \ display
-      \ '^\i\+'
+      \ '\i\+'
 
 syn match   autohotkeyLabelDelimiter
       \ contained
