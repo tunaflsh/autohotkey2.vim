@@ -41,38 +41,33 @@ syn match autohotkeyVariable
       \ '%\S\{-}%'
 
 syn keyword autohotkeyBuiltinVariable
-      \ A_Space A_Tab
-      \ A_WorkingDir A_ScriptDir A_ScriptName A_ScriptFullPath A_ScriptHwnd A_LineNumber
-      \ A_LineFile A_ThisFunc A_ThisLabel A_AhkVersion A_AhkPath A_IsUnicode A_IsCompiled A_ExitReason
-      \ A_YYYY A_MM A_DD A_MMMM A_MMM A_DDDD A_DDD A_WDay A_YDay A_YWeek A_Hour A_Min
-      \ A_Mon A_Year A_MDay A_NumBatchLines
-      \ A_Sec A_MSec A_Now A_NowUTC A_TickCount
-      \ A_IsSuspended A_IsPaused A_IsCritical A_BatchLines A_TitleMatchMode A_TitleMatchModeSpeed
-      \ A_DetectHiddenWindows A_DetectHiddenText A_AutoTrim A_StringCaseSense
-      \ A_FileEncoding A_FormatInteger A_FormatFloat A_KeyDelay A_WinDelay A_ControlDelay
-      \ A_SendMode A_SendLevel A_StoreCapsLockMode A_KeyDelay A_KeyDelayDuration
-      \ A_KeyDelayPlay A_KeyDelayPlayDuration A_MouseDelayPlay
-      \ A_MouseDelay A_DefaultMouseSpeed A_RegView A_IconHidden A_IconTip A_IconFile
-      \ A_CoordModeToolTip A_CoordModePixel A_CoordModeMouse A_CoordModeCaret A_CoordModeMenu
-      \ A_IconNumber
-      \ A_TimeIdle A_TimeIdlePhysical A_DefaultGui A_DefaultListView A_DefaultTreeView
-      \ A_Gui A_GuiControl A_GuiWidth A_GuiHeight A_GuiX A_GuiY A_GuiEvent
-      \ A_GuiControlEvent A_EventInfo
-      \ A_ThisMenuItem A_ThisMenu A_ThisMenuItemPos A_ThisHotkey A_PriorHotkey
-      \ A_PriorKey A_TimeSinceThisHotkey A_TimeSincePriorHotkey A_EndChar
-      \ ComSpec A_Temp A_OSType A_OSVersion A_Language A_ComputerName A_UserName
-      \ A_Is64BitOS A_PtrSize
-      \ A_WinDir A_ProgramFiles ProgramFiles A_AppData A_AppDataCommon A_Desktop
-      \ A_DesktopCommon A_StartMenu A_StartMenuCommon A_Programs
-      \ A_ProgramsCommon A_Startup A_StartupCommon A_MyDocuments A_IsAdmin
-      \ A_ScreenWidth A_ScreenHeight A_ScreenDPI A_IPAddress1 A_IPAddress2 A_IPAddress3
-      \ A_IPAddress4
-      \ A_Cursor A_CaretX A_CaretY Clipboard ClipboardAll ErrorLevel A_LastError
-      \ A_Index A_LoopFileName A_LoopRegName A_LoopReadLine A_LoopField
-      \ A_LoopFileExt A_LoopFileFullPath A_LoopFileLongPath A_LoopFileShortPath
-      \ A_LoopFileShortName A_LoopFileDir A_LoopFileTimeModified A_LoopFileTimeCreated
-      \ A_LoopFileTimeAccessed A_LoopFileAttrib A_LoopFileSize A_LoopFileSizeKB A_LoopFileSizeMB
-      \ A_LoopRegType A_LoopRegKey A_LoopRegSubKey A_LoopRegTimeModified
+      \ A_AhkPath A_AhkVersion A_AllowMainWindow A_AppData A_AppDataCommon
+      \ A_Args A_Clipboard A_ComSpec A_ComputerName A_ControlDelay
+      \ A_CoordModeCaret A_CoordModeMenu A_CoordModeMouse A_CoordModePixel
+      \ A_CoordModeToolTip A_Cursor A_DD A_DDD A_DDDD A_DefaultMouseSpeed
+      \ A_Desktop A_DesktopCommon A_DetectHiddenText A_DetectHiddenWindows
+      \ A_EndChar A_EventInfo A_FileEncoding A_HotkeyInterval
+      \ A_HotkeyModifierTimeout A_Hour A_IconFile A_IconHidden A_IconNumber
+      \ A_IconTip A_Index A_InitialWorkingDir A_Is64bitOS A_IsAdmin A_IsCompiled
+      \ A_IsCritical A_IsPaused A_IsSuspended A_KeyDelay A_KeyDelayPlay
+      \ A_KeyDuration A_KeyDurationPlay A_Language A_LastError A_LineFile
+      \ A_LineNumber A_ListLines A_LoopField A_LoopFileAttrib A_LoopFileDir
+      \ A_LoopFileExt A_LoopFileFullPath A_LoopFileName A_LoopFilePath
+      \ A_LoopFileShortName A_LoopFileShortPath A_LoopFileSize A_LoopFileSizeKB
+      \ A_LoopFileSizeMB A_LoopFileTimeAccessed A_LoopFileTimeCreated
+      \ A_LoopFileTimeModified A_LoopReadLine A_LoopRegKey A_LoopRegName
+      \ A_LoopRegTimeModified A_LoopRegType A_MDay A_MM A_MMM A_MMMM A_MSec
+      \ A_MaxHotkeysPerInterval A_MenuMaskKey A_Min A_Mon A_MouseDelay
+      \ A_MouseDelayPlay A_MyDocuments A_Now A_NowUTC A_OSVersion A_PriorHotkey
+      \ A_PriorKey A_ProgramFiles A_Programs A_ProgramsCommon A_PtrSize
+      \ A_RegView A_ScreenDPI A_ScreenHeight A_ScreenWidth A_ScriptDir
+      \ A_ScriptFullPath A_ScriptHwnd A_ScriptName A_Sec A_SendLevel A_SendMode
+      \ A_Space A_StartMenu A_StartMenuCommon A_Startup A_StartupCommon
+      \ A_StoreCapsLockMode A_Tab A_Temp A_ThisFunc A_ThisHotkey A_TickCount
+      \ A_TimeIdle A_TimeIdleKeyboard A_TimeIdleMouse A_TimeIdlePhysical
+      \ A_TimeSincePriorHotkey A_TimeSinceThisHotkey A_TitleMatchMode
+      \ A_TitleMatchModeSpeed A_TrayMenu A_UserName A_WDay A_WinDelay A_WinDir
+      \ A_WorkingDir A_YDay A_YWeek A_YYYY A_Year
 
 syn match   autohotkeyBuiltinVariable
       \ contained
