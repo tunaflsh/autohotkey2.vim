@@ -137,6 +137,14 @@ syn keyword autohotkeyFunction
       \ WinSetTitle WinSetTransColor WinSetTransparent WinShow WinWait
       \ WinWaitActive WinWaitClose WinWaitNotActive
 
+syn keyword autohotkeyBuiltinClass
+      \ Any Array BoundFunc Buffer Class ClipboardAll Closure ComObjArray
+      \ ComObject ComValue ComValueRef Enumerator Error File Float Func Gui
+      \ IndexError InputHook Integer Map MemberError MemoryError Menu MenuBar
+      \ MethodError Number OSError Object Primitive PropertyError RegExMatchInfo
+      \ String TargetError TimeoutError TypeError UnsetError UnsetItemError
+      \ ValueError VarRef ZeroDivisionError
+
 syn keyword autohotkeyStatement
       \ as class extends
 
@@ -287,6 +295,7 @@ hi def link autohotkeyStringDelimiter     autohotkeyString
 hi def link autohotkeyVariable            Identifier
 hi def link autohotkeyVariableDelimiter   autohotkeyVariable
 hi def link autohotkeyBuiltinVariable     Macro
+hi def link autohotkeyBuiltinClass        Type
 hi def link autohotkeyCommand             Keyword
 hi def link autohotkeyFunction            Function
 hi def link autohotkeyStatement           autohotkeyCommand
