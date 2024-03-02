@@ -215,7 +215,6 @@ syn keyword autohotkeyType
       \ local
       \ global
       \ static
-      \ byref
 
 syn keyword autohotkeyBoolean
       \ true
