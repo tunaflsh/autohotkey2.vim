@@ -163,27 +163,9 @@ syn keyword autohotkeyInclude
 
 syn keyword autohotkeyPreProc
       \ contained
-      \ HotkeyInterval HotKeyModifierTimeout
-      \ Hotstring
-      \ IfWinActive IfWinNotActive IfWinExist IfWinNotExist
-      \ If IfTimeout
-      \ MaxHotkeysPerInterval MaxThreads MaxThreadsBuffer MaxThreadsPerHotkey
-      \ UseHook InstallKeybdHook InstallMouseHook
-      \ KeyHistory
-      \ NoTrayIcon SingleInstance
-      \ WinActivateForce
-      \ AllowSameLineComments
-      \ ClipboardTimeout
-      \ CommentFlag
-      \ ErrorStdOut
-      \ EscapeChar
-      \ MaxMem
-      \ NoEnv
-      \ Persistent
-      \ LTrim
-      \ InputLevel
-      \ MenuMaskKey
-      \ Warn
+      \ ClipboardTimeout DllLoad ErrorStdOut HotIf HotIfTimeout Hotstring
+      \ InputLevel MaxThreads MaxThreadsBuffer MaxThreadsPerHotkey NoTrayIcon
+      \ Requires SingleInstance SuspendExempt UseHook Warn WinActivateForce
 
 syn keyword autohotkeyMatchClass
       \ ahk_group ahk_class ahk_id ahk_pid ahk_exe
