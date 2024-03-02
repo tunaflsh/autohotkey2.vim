@@ -158,7 +158,7 @@ syn keyword autohotkeyBuiltinClass
       \ ValueError VarRef ZeroDivisionError
 
 syn keyword autohotkeyStatement
-      \ and as class extends is not or
+      \ and as class extends in is not or super this
 
 syn keyword autohotkeyRepeat
       \ Loop For While Until
