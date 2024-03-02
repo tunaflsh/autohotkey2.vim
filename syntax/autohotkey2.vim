@@ -19,11 +19,11 @@ syn keyword autohotkeyTodo
       \ contained
       \ TODO FIXME XXX NOTE
 
-" only these chars are valid as escape sequences:   ,%`;nrbtvaf
-" https://autohotkey.com/docs/commands/_EscapeChar.htm
+" only these chars are valid as escape sequences:   "',%`;nrbtvaf
+" https://www.autohotkey.com/docs/v2/misc/EscapeChar.htm
 syn match   autohotkeyEscape
       \ display
-      \ '`[,%`;nrbtvaf]'
+      \ /`["',%`;nrbtvaf]/
 
 syn region autohotkeyString
       \ display
@@ -31,7 +31,17 @@ syn region autohotkeyString
       \ matchgroup=autohotkeyStringDelimiter
       \ start=+"+
       \ end=+"+
-      \ contains=autohotkeyEscape
+      \ skip=+`"+
+      \ contains=autohotkeyEscape,autohotkeyMatchClass
+
+syn region autohotkeyStringSingleQuoted
+      \ display
+      \ oneline
+      \ matchgroup=autohotkeyStringDelimiter
+      \ start=+'+
+      \ end=+'+
+      \ skip=+`'+
+      \ contains=autohotkeyEscape,autohotkeyMatchClass
 
 syn match autohotkeyVariable
       \ display
@@ -291,6 +301,7 @@ hi def link autohotkeyHotstring           Type
 hi def link autohotkeyHotstringDelimiter  autohotkeyDelimiter
 hi def link autohotkeyHotstringOptions    Special
 hi def link autohotkeyString              String
+hi def link autohotkeyStringSingleQuoted  String
 hi def link autohotkeyStringDelimiter     autohotkeyString
 hi def link autohotkeyVariable            Identifier
 hi def link autohotkeyVariableDelimiter   autohotkeyVariable
