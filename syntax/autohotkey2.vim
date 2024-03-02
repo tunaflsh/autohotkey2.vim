@@ -138,8 +138,7 @@ syn keyword autohotkeyFunction
       \ WinWaitActive WinWaitClose WinWaitNotActive
 
 syn keyword autohotkeyStatement
-      \ Break Continue Exit ExitApp Gosub Goto OnExit Pause Return
-      \ Suspend Reload new class extends
+      \ as class extends
 
 syn keyword autohotkeyRepeat
       \ Loop For While Until
