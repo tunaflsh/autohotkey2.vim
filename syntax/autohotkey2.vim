@@ -145,10 +145,8 @@ syn keyword autohotkeyRepeat
       \ Loop
 
 syn keyword autohotkeyConditional
-      \ IfExist IfNotExist If IfEqual IfLess IfGreater Else
-      \ IfWinExist IfWinNotExist IfWinActive IfWinNotActive
-      \ IfNotEqual IfLessOrEqual IfGreaterOrEqual
-      \ while until for in try catch finally
+      \ Break Case Catch Continue Default Else Finally Goto If Return Switch
+      \ Throw Try
 
 syn match   autohotkeyPreProcStart
       \ nextgroup=
