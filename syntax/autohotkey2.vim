@@ -17,6 +17,56 @@ set cpo&vim
 
 syn case ignore
 
+syn match   autohotkeySingleEquals        '\v\='
+
+syn match   autohotkeyCompare             '\v\<'
+syn match   autohotkeyCompare             '\v\>'
+syn match   autohotkeyCompare             '\v\<\='
+syn match   autohotkeyCompare             '\v\>\='
+syn match   autohotkeyCompare             '\v\=\='
+syn match   autohotkeyCompare             '\v\!\='
+syn match   autohotkeyCompare             '\v\!\=\='
+
+syn match   autohotkeyBitwise             '\v\&'
+syn match   autohotkeyBitwise             '\v\|'
+syn match   autohotkeyBitwise             '\v\^'
+syn match   autohotkeyBitwise             '\v\~'
+syn match   autohotkeyBitwise             '\v\<\<'
+syn match   autohotkeyBitwise             '\v\>\>'
+syn match   autohotkeyBitwise             '\v\>\>\>'
+
+syn match   autohotkeyArithmetic          '\v\+'
+syn match   autohotkeyArithmetic          '\v\-'
+syn match   autohotkeyArithmetic          '\v\*'
+syn match   autohotkeyArithmetic          '\v\*\*'
+syn match   autohotkeyArithmetic          '\v\/'
+syn match   autohotkeyArithmetic          '\v\/\/'
+
+syn match   autohotkeyAssign              '\v\&\='
+syn match   autohotkeyAssign              '\v\*\='
+syn match   autohotkeyAssign              '\v\-\='
+syn match   autohotkeyAssign              '\v\.\='
+syn match   autohotkeyAssign              '\v\/\/\='
+syn match   autohotkeyAssign              '\v\:\='
+syn match   autohotkeyAssign              '\v\<\<\='
+syn match   autohotkeyAssign              '\v\>\>\='
+syn match   autohotkeyAssign              '\v\>\>>='
+syn match   autohotkeyAssign              '\v\^\='
+syn match   autohotkeyAssign              '\v\|\='
+syn match   autohotkeyAssign              '\v\+\='
+syn match   autohotkeyAssign              '\v\/\='
+
+syn match   autohotkeyFatArrow            '\v\=\>'
+syn match   autohotkeyRegexMatch          '\v\~\='
+
+syn match   autohotkeyIncrement           '\S++'hs=s+1,ms=s+1
+syn match   autohotkeyDecrement           '\S--'hs=s+1,ms=s+1
+
+syn match   autohotkeyVarRef              '&\S'he=e-1,me=e-1
+syn match   autohotkeyMaybe               '\i?'hs=s+1,ms=s+1
+
+syn match   autohotkeyOrMaybe             '??'
+
 syn keyword autohotkeyTodo
       \ contained
       \ TODO FIXME XXX NOTE
@@ -353,6 +403,8 @@ hi def link autohotkeyType                Type
 hi def link autohotkeyBoolean             Boolean
 hi def link autohotkeyUnset               Special
 hi def link autohotkeyLogical             autohotkeyStatement
+hi def link autohotkeyMaybe               Special
+hi def link autohotkeyVarRef              autohotkeyType
 
 let b:current_syntax = "autohotkey"
 
