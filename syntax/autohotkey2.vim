@@ -328,9 +328,8 @@ hi def link autohotkeyVariable            Identifier
 hi def link autohotkeyVariableDelimiter   autohotkeyVariable
 hi def link autohotkeyBuiltinVariable     Macro
 hi def link autohotkeyBuiltinClass        Type
-hi def link autohotkeyCommand             Keyword
 hi def link autohotkeyFunction            Function
-hi def link autohotkeyStatement           autohotkeyCommand
+hi def link autohotkeyStatement           Keyword
 hi def link autohotkeyRepeat              Repeat
 hi def link autohotkeyConditional         Conditional
 hi def link autohotkeyPreProcStart        PreProc
