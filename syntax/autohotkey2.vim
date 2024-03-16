@@ -158,7 +158,14 @@ syn keyword autohotkeyBuiltinClass
       \ ValueError VarRef ZeroDivisionError
 
 syn keyword autohotkeyStatement
-      \ and as class extends in is not or super this
+      \ as class extends in is super this
+
+syn match   autohotkeyLogical             '&&'
+syn match   autohotkeyLogical             '||'
+syn match   autohotkeyLogical             '!'
+syn keyword autohotkeyLogical
+      \ and or not
+
 
 syn keyword autohotkeyUnset
       \ unset
@@ -345,6 +352,7 @@ hi def link autohotkeyFloat               autohotkeyNumber
 hi def link autohotkeyType                Type
 hi def link autohotkeyBoolean             Boolean
 hi def link autohotkeyUnset               Special
+hi def link autohotkeyLogical             autohotkeyStatement
 
 let b:current_syntax = "autohotkey"
 
