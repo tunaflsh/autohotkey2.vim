@@ -17,6 +17,10 @@ set cpo&vim
 
 syn case ignore
 
+syn match   autohotkeyLogical             '&&'
+syn match   autohotkeyLogical             '||'
+syn match   autohotkeyLogical             '!'
+
 syn match   autohotkeySingleEquals        '\v\='
 
 syn match   autohotkeyCompare             '\v\<'
@@ -210,9 +214,6 @@ syn keyword autohotkeyBuiltinClass
 syn keyword autohotkeyStatement
       \ as class extends in is super this
 
-syn match   autohotkeyLogical             '&&'
-syn match   autohotkeyLogical             '||'
-syn match   autohotkeyLogical             '!'
 syn keyword autohotkeyLogical
       \ and or not
 
