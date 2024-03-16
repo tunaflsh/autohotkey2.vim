@@ -160,6 +160,9 @@ syn keyword autohotkeyBuiltinClass
 syn keyword autohotkeyStatement
       \ and as class extends in is not or super this
 
+syn keyword autohotkeyUnset
+      \ unset
+
 syn keyword autohotkeyRepeat
       \ Loop For While Until
 
@@ -341,6 +344,7 @@ hi def link autohotkeyInteger             autohotkeyNumber
 hi def link autohotkeyFloat               autohotkeyNumber
 hi def link autohotkeyType                Type
 hi def link autohotkeyBoolean             Boolean
+hi def link autohotkeyUnset               Special
 
 let b:current_syntax = "autohotkey"
 
