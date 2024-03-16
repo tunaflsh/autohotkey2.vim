@@ -17,10 +17,6 @@ set cpo&vim
 
 syn case ignore
 
-syn match   autohotkeyLogical             '&&'
-syn match   autohotkeyLogical             '||'
-syn match   autohotkeyLogical             '!'
-
 syn match   autohotkeySingleEquals        '\v\='
 
 syn match   autohotkeyCompare             '\v\<'
@@ -28,11 +24,21 @@ syn match   autohotkeyCompare             '\v\>'
 syn match   autohotkeyCompare             '\v\<\='
 syn match   autohotkeyCompare             '\v\>\='
 syn match   autohotkeyCompare             '\v\=\='
+
+" ! symbol
+syn match   autohotkeyLogical             '!'
 syn match   autohotkeyCompare             '\v\!\='
 syn match   autohotkeyCompare             '\v\!\=\='
 
+" & symbol
 syn match   autohotkeyBitwise             '\v\&'
+syn match   autohotkeyVarRef              '&\S'he=e-1,me=e-1
+syn match   autohotkeyLogical             '&&'
+
+" | symbol
 syn match   autohotkeyBitwise             '\v\|'
+syn match   autohotkeyLogical             '||'
+
 syn match   autohotkeyBitwise             '\v\^'
 syn match   autohotkeyBitwise             '\v\~'
 syn match   autohotkeyBitwise             '\v\<\<'
@@ -59,7 +65,6 @@ syn match   autohotkeyDecrement           '\S--'hs=s+1,ms=s+1
 " this works however
 syn match   autohotkeyDecrement           '\v\-\-\S'he=e-1
 
-syn match   autohotkeyVarRef              '&\S'he=e-1,me=e-1
 syn match   autohotkeyMaybe               '\i?'hs=s+1,ms=s+1
 
 syn match   autohotkeyOrMaybe             '??'
