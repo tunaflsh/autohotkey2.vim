@@ -406,7 +406,7 @@ hi def link autohotkeyLogical             autohotkeyStatement
 hi def link autohotkeyMaybe               Special
 hi def link autohotkeyVarRef              autohotkeyType
 
-let b:current_syntax = "autohotkey"
+let b:current_syntax = "autohotkey2"
 
 let &cpo = s:cpo_save
 unlet s:cpo_save
