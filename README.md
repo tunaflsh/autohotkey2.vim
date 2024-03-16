@@ -1,7 +1,6 @@
-# autohotkey.vim
+# autohotkey2.vim
 
-Vim syntax highlighting for AutoHotkey files
+Vim syntax highlighting for AutoHotkey v2.0 files
 
-The following file can be used to test the syntax highlighting:  
-https://github.com/mmikeww/LexAHKL/blob/master/test/Highlight%20Test.txt  
-Just rename it to have `.ahk` extension
+The following file can be used to test the syntax highlighting:
+https://github.com/lawkaita/autohotkey2.vim/blob/master/doc/sample.ahk
