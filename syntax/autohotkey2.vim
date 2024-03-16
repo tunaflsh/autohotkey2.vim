@@ -46,6 +46,19 @@ syn match   autohotkeyArithmetic          '\v\*\*'
 syn match   autohotkeyArithmetic          '\v\/'
 syn match   autohotkeyArithmetic          '\v\/\/'
 
+syn match   autohotkeyFatArrow            '\v\=\>'
+syn match   autohotkeyRegexMatch          '\v\~\='
+
+syn match   autohotkeyIncrement           '\S++'hs=s+1,ms=s+1
+syn match   autohotkeyIncrement           '++\S'he=e-1,me=e-1
+syn match   autohotkeyDecrement           '\S--'hs=s+1,ms=s+1
+syn match   autohotkeyDecrement           '\v\-\-\S'he=e-1 ",ms=e-1 bugs out
+
+syn match   autohotkeyVarRef              '&\S'he=e-1,me=e-1
+syn match   autohotkeyMaybe               '\i?'hs=s+1,ms=s+1
+
+syn match   autohotkeyOrMaybe             '??'
+
 syn match   autohotkeyAssign              '\v\&\='
 syn match   autohotkeyAssign              '\v\*\='
 syn match   autohotkeyAssign              '\v\-\='
@@ -54,22 +67,11 @@ syn match   autohotkeyAssign              '\v\/\/\='
 syn match   autohotkeyAssign              '\v\:\='
 syn match   autohotkeyAssign              '\v\<\<\='
 syn match   autohotkeyAssign              '\v\>\>\='
-syn match   autohotkeyAssign              '\v\>\>>='
+syn match   autohotkeyAssign              '\v\>\>\>\='
 syn match   autohotkeyAssign              '\v\^\='
 syn match   autohotkeyAssign              '\v\|\='
 syn match   autohotkeyAssign              '\v\+\='
 syn match   autohotkeyAssign              '\v\/\='
-
-syn match   autohotkeyFatArrow            '\v\=\>'
-syn match   autohotkeyRegexMatch          '\v\~\='
-
-syn match   autohotkeyIncrement           '\S++'hs=s+1,ms=s+1
-syn match   autohotkeyDecrement           '\S--'hs=s+1,ms=s+1
-
-syn match   autohotkeyVarRef              '&\S'he=e-1,me=e-1
-syn match   autohotkeyMaybe               '\i?'hs=s+1,ms=s+1
-
-syn match   autohotkeyOrMaybe             '??'
 
 syn keyword autohotkeyTodo
       \ contained
