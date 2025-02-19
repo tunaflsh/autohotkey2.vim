@@ -1,5 +1,5 @@
 " Vim filetype detect plugin file
-" Language:     AutoHotkey2
+" Language:     AutoHotkey v2.0 script file
 " Maintainer:   tunaflsh
 "		https://github.com/tunaflsh/autohotkey2.vim
 " Last Changed: 2025 Feb 19
