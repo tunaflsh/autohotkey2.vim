@@ -1,9 +1,18 @@
 -- Neovim filetype plugin file
--- Defines <Localleader>ll to start the script
--- Language:    AutoHotkey v2.0 script file
--- Maintainer:  tunaflsh
---              https://github.com/tunaflsh/autohotkey2.vim
--- Last Changed: 2025 Feb 19
+-- Language:      AutoHotkey v2.0 script file
+-- Maintainer:    tunaflsh
+--                https://github.com/tunaflsh/autohotkey2.vim
+-- Last Changed:  2025 Feb 19
+
+if vim.b.did_ftplugin then
+  return
+end
+vim.b.did_ftplugin = 1
+
+vim.bo.comments = ":;"
+vim.bo.commentstring = ";\\ %s"
+
+vim.b.undo_ftplugin = "setlocal comments< commentstring<"
 
 vim.keymap.set("",
   "<Localleader>ll",
