@@ -1,4 +1,4 @@
-" Vim filetype plugin file
+" Vim filetype detect plugin file
 " Language:     AutoHotkey2
 " Maintainer:   tunaflsh
 "		https://github.com/tunaflsh/autohotkey2.vim
