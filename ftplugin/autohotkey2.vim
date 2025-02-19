@@ -1,6 +1,6 @@
 " Vim filetype plugin file
 " Defines <Localleader>ll to start the script
-" Language:     AutoHotkey v2
+" Language:     AutoHotkey v2.0 script file
 " Maintainer:   tunaflsh
 "               https://github.com/tunaflsh/autohotkey2.vim
 " Last Changed: 2025 Feb 19
