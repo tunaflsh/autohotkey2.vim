@@ -4,6 +4,18 @@
 " Maintainer:   tunaflsh
 "               https://github.com/tunaflsh/autohotkey2.vim
 " Last Changed: 2025 Feb 19
+" Copied From:  https://github.com/vim/vim/blob/master/runtime/ftplugin/autohotkey.vim
+
+if exists("b:did_ftplugin")
+  finish
+endif
+let b:did_ftplugin = 1
+
+setlocal comments=:;
+setlocal commentstring=;\ %s
+
+let b:undo_ftplugin = "setlocal comments< commentstring<"
+
 
 if exists("$MSYSTEM")
     let restart_opt = " //restart "
