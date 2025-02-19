@@ -1,6 +1,6 @@
 -- Neovim filetype plugin file
 -- Defines <Localleader>ll to start the script
--- Language:    AutoHotkey
+-- Language:    AutoHotkey v2.0 script file
 -- Maintainer:  tunaflsh
 --              https://github.com/tunaflsh/autohotkey2.vim
 -- Last Changed: 2025 Feb 19
