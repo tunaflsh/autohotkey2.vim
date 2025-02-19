@@ -10,7 +10,7 @@ end
 vim.b.did_ftplugin = 1
 
 vim.bo.comments = ":;"
-vim.bo.commentstring = ";\\ %s"
+vim.bo.commentstring = "; %s"
 
 vim.b.undo_ftplugin = "setlocal comments< commentstring<"
 
