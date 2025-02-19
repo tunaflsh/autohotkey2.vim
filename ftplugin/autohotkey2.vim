@@ -10,4 +10,8 @@ if exists("$MSYSTEM")
 else
     let restart_opt = " /restart "
 endif
+" (Re)start the script in the current buffer
 map <buffer> <Localleader>ll <Cmd>w<CR><Cmd>call system("AutoHotkey"..restart_opt..bufname())<CR>
+
+" Open documentation for the word under cursor
+map <buffer> K <Cmd>Open "https://www.autohotkey.com/docs/v2/lib/"..expand("<cword>")..".htm"<CR>
