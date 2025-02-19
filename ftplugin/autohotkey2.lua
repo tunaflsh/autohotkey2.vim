@@ -16,3 +16,13 @@ vim.keymap.set("",
     desc = "(Re)start the script (AutoHotkey v2)",
   }
 )
+vim.keymap.set("",
+  "K",
+  function()
+    vim.ui.open("https://www.autohotkey.com/docs/v2/lib/"..vim.fn.expand("<cword>")..".htm")
+  end,
+  {
+    buffer = true,
+    desc = "Open documentation for the <cword> (AutoHotkey v2)",
+  }
+)
