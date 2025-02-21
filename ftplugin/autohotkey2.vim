@@ -25,4 +25,4 @@ endif
 map <buffer> <Localleader>ll <Cmd>w<CR><Cmd>call system("AutoHotkey"..restart_opt..bufname())<CR>
 
 " Open documentation for the word under cursor
-map <buffer> K <Cmd>Open "https://www.autohotkey.com/docs/v2/lib/"..expand("<cword>")..".htm"<CR>
+map <buffer> K <Cmd>exe "Open https://www.autohotkey.com/docs/v2/lib/"..expand("<cword>")..".htm"<CR>
