@@ -16,30 +16,30 @@ setlocal commentstring=;\ %s
 let b:undo_ftplugin = "setlocal comments< commentstring<"
 
 if has("nvim")
-    lua << EOF
-    -- (Re)start the script in the current buffer
-    vim.keymap.set("", "<Localleader>ll",
-        function()
-            vim.cmd.write()
-            vim.system({ "AutoHotkey", "/restart", vim.api.nvim_buf_get_name(0) })
-        end,
-        {
-            buffer = true,
-            desc = "(Re)start the script (AutoHotkey v2)",
-        }
-    )
-    -- Open documentation for the word under cursor
-    vim.keymap.set("", "K",
-      function()
-          vim.ui.open("https://www.autohotkey.com/docs/v2/lib/"
-            ..vim.fn.expand("<cword>")..".htm")
-      end,
-      {
-          buffer = true,
-          desc = "Open documentation for the <cword> (AutoHotkey v2)",
-      }
-    )
-    EOF
+lua << EOF
+-- (Re)start the script in the current buffer
+vim.keymap.set("", "<Localleader>ll",
+    function()
+        vim.cmd.write()
+        vim.system({ "AutoHotkey", "/restart", vim.api.nvim_buf_get_name(0) })
+    end,
+    {
+        buffer = true,
+        desc = "(Re)start the script (AutoHotkey v2)",
+    }
+)
+-- Open documentation for the word under cursor
+vim.keymap.set("", "K",
+  function()
+      vim.ui.open("https://www.autohotkey.com/docs/v2/lib/"
+        ..vim.fn.expand("<cword>")..".htm")
+  end,
+  {
+      buffer = true,
+      desc = "Open documentation for the <cword> (AutoHotkey v2)",
+  }
+)
+EOF
 else
     if exists("$MSYSTEM")
         let restart_opt = " //restart "
